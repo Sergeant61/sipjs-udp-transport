@@ -8,8 +8,8 @@ class UDPTransport {
 
   constructor(logger, options) {
     this.logger = logger
-    this.port = options.port || 5060
-    this.server = options.server || '0.0.0.0'
+    this.port = options.port ?? 5060
+    this.server = options.server ?? '0.0.0.0'
     this.asteriskPort = options.asteriskPort
     this.asteriskDomain = options.asteriskDomain
   }
