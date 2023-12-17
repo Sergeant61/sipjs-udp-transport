@@ -1,6 +1,6 @@
 {
   "name": "@sergeant61/sipjs-udp-transport",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Adds UDP transport to SIP.js",
   "main": "./UDPTransport.js",
   "repository": {
