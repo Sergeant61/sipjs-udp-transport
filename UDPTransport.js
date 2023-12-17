@@ -39,7 +39,7 @@ class UDPTransport {
 
     this.client.on('listening', () => {
       const address = this.client.address()
-      this.logger.info(`server listening ${address.address}:${address.port}`)
+      this.logger.log(`server listening ${address.address}:${address.port}`)
     })
 
     return new Promise((resolve, reject) => {
