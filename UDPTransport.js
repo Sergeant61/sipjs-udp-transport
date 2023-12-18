@@ -61,7 +61,11 @@ class UDPTransport {
   }
 
   dispose() {
-    this.client.close()
+    return new Promise((resolve, reject) => {
+      this.client.close(()=> {
+        resolve()
+      });
+    });
   }
 
   send(data) {
